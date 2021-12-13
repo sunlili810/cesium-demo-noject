@@ -1,0 +1,111 @@
+.bodywrap{
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:column;
+  height:100%;
+  padding: 20px;
+  .wraptop{
+    width: 100%;
+    flex:3.5;
+    padding: 20px 30px 0 30px;
+    border:1px solid #129AC1;
+    background: rgba(24,39,79,0.5);
+    .wrapTopTit{
+      color:#fff;
+      font-size: 37px;
+      margin-bottom: 25px;
+    }
+    .queWrap{
+      display: flex;
+      flex-direction: row;
+      .queLeft{
+        width:165px;
+        height:165px;
+        margin-right:50px;
+      }
+      .queRight{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .wrapbottom{
+    background: rgba(24,39,79,0.3);
+    flex: 6.5;
+    width: 100%;
+    color: white;
+    margin-top:30px;
+    position: relative;
+    position: relative;
+    padding:50px 4% 0px 4%;
+    border:1px solid #129AC1;
+    .valueListOne,.toiletStatistics{
+      display: inline-block;
+      width:50%;
+      text-align: left;
+      margin-bottom: 15px;
+      .valueName{
+        display: inline-block;
+        background: url("../../res/images/pic_k2.png") no-repeat;
+        width:156px;
+        height:44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 23px;
+        color:#1FF3FB;
+        vertical-align: middle;
+        margin-right:20px;
+      }
+      .valueV,.toiletVal{
+        display: inline-block;
+        background: url("../../res/images/pic_k4.png") no-repeat;
+        width:174px;
+        height:66px;
+        line-height: 66px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        vertical-align: middle;
+        b{
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .valueListOne:nth-child(2n){
+      text-align: right;
+    }
+    .toiletStatistics{
+      width:100%;
+      text-align: left;
+      margin-top:3%;
+      .toiletVal{
+        width:208px;
+        height:53px;
+        line-height: 53px;
+        font-size: 31px;
+        text-align: right;
+        background: url("../../res/images/pic_k3.png") repeat-x;
+        .letterToilet{
+          display: inline-block;
+          width:46px;
+          text-align: center;
+          margin-right:6px;
+        }
+      }
+      .toiletValTotal{
+        width:312px;
+      }
+    }
+    b{
+      vertical-align: middle;
+      font-size: 29px;
+      font-weight: 500;
+      color:#00EAFF;
+    }
+  }
+}

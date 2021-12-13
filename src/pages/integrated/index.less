@@ -1,0 +1,203 @@
+.integratedWrap{
+  display: flex;
+  flex-direction: column;
+}
+.integratedWrapDiv{
+  height:100%;
+  width:100%;
+  //width:5760px;
+  //background: -webkit-linear-gradient(top,#193783,#041540 10%,#041540);;
+  font-family: 'Microsoft YaHei';
+  //background: url(../../res/images/bg-main.jpg) no-repeat left bottom;
+  //background-color: #041540;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  color:#7B7B7B;
+  .leftCont{
+    flex:0.75;
+    margin-right:20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    .tipName{
+      cursor: pointer;
+
+    }
+
+  }
+  .rightCont{
+    flex:0.25;
+    display: flex;
+    flex-direction: column;
+
+    .rTop{
+      flex:0.38;
+      background: #fff;
+      margin-bottom: 20px;
+      .listOne{
+        display: inline-block;
+        width:90%;
+        height:53%;
+        vertical-align: top;
+        .iconDiv{
+          display: inline-block;
+          width:40%;
+          .tit{
+            color:#365268;
+            text-align: center;
+            padding: 15px 25px 5px 25px;
+          }
+          .iconF{
+            width:80px;
+            height:80px;
+            margin: 0 auto;
+            line-height: 78px;
+            text-align: center;
+            border: 2px solid #D4886A;
+            border-radius: 50%;
+            .icon{
+              font-size: 55px;
+              padding:5px;
+              color:#fff;
+              background: #D4886A;
+              border-radius: 50%;
+            }
+          }
+
+        }
+        .controlDiv{
+          display: inline-block;
+          width:40%;
+          text-align: right;
+          .status{
+            b{
+              font-size: 22px;
+              color:#7E7E7E;
+              margin-left:10px;
+            }
+          }
+          .ControlBtn{
+            margin-top:5px;
+            .ant-btn{
+              width: 150px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+      .listOneDg{
+        .iconF{
+          border:2px solid #A2BAA2!important;
+          .icon{
+            background-color: #A2B967!important;
+          }
+        }
+      }
+      .tit{
+        color:#365268;
+        font-size: 15px;
+        padding: 0 20px;
+        span{
+          font-size: 12px;
+          margin-left:20px;
+        }
+      }
+      .staticOne{
+        padding: 0 20px;
+        margin-top:15px;
+        .rangeClock{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .rBottom{
+      flex:0.62;
+      background: #fff;
+
+      .tit{
+        color:#6F6F6F;
+        padding: 15px 20px;
+        font-size: 15px;
+      }
+      .listOne{
+        display: inline-block;
+        height:20%;
+        width:40%;
+        text-align: center;
+        margin:0 5%;
+        border-bottom: 1px solid #D5D5D5;
+        .num{
+          font-size: 20px;
+          margin:15px 0;
+          font-weight: bold;
+        }
+        .name{
+
+        }
+      }
+    }
+
+  }
+
+  .ant-select{
+    margin-left:15px;
+  }
+  .ant-select-selector{
+    height:28px!important;
+  }
+  .ant-select-selector{
+    border-radius: 16px!important;
+  }
+  .ant-select-selection-item{
+    line-height: 28px!important;
+    color: #7E7E7E;
+    font-weight: normal;
+  }
+
+}
+.anticon-left,.anticon-right{
+  font-size: 18px;
+  color:#041540;
+}
+
+.ant-popover-inner-content{
+  padding:5px 10px!important;
+  color:#fff!important;
+}
+.ant-popover-inner{
+  background: rgba(52,78,86,0.9)!important;
+  color:#fff!important;
+}
+.ant-popover-arrow{
+  border-right-color: #162e36!important;
+  border-bottom-color: #162e36!important;
+}
+
+@media screen and (min-width: 1580px) {
+  .integratedWrapDiv .rightCont .rTop .listOne .controlDiv .ControlBtn .ant-btn{
+    width:84px;
+  }
+  .integratedWrapDiv .rightCont .rTop .listOne{
+    width:100%;
+  }
+  .integratedWrapDiv .rightCont .rTop .listOne .iconDiv .iconF .icon {
+    font-size: 52px;
+  }
+  .integratedWrapDiv .rightCont .rTop .listOne .iconDiv .iconF{
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+  }
+  .rBottom{
+    .listOne{
+      height:102px;
+      vertical-align: top;
+      .name{
+        font-size: 12px!important;
+        height:36px;
+        vertical-align: top;
+      }
+    }
+  }
+  }

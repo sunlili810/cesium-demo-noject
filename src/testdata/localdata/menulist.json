@@ -1,0 +1,53 @@
+{
+  "result": 0,
+  "list": [ {
+    "key": "doorguard/organization",
+    "name": "首页",
+    "icon": "DesktopOutlined"
+  },{
+    "key": "doorguard/organization",
+    "name": "可视化运营",
+    "icon": "DesktopOutlined"
+  }, {
+    "key": "doorguard/people",
+    "name": "智慧照明",
+    "icon": "DesktopOutlined"
+  }, {
+    "key": "doorguard/accessControl",
+    "name": "视频监控",
+    "icon": "DesktopOutlined"
+  },{
+      "key": "doorguard/doorLock",
+      "name": "环境气象",
+      "icon": "DesktopOutlined"
+    },
+    {
+      "key": "doorguard/accessControlCard",
+      "name": "信息发布",
+      "icon": "DesktopOutlined"
+    },
+    {
+      "key": "doorguard/accessControlAuthority",
+      "name": "公共广播",
+      "icon": "DesktopOutlined"
+    },
+    {
+      "key": "doorguard/cardRecord",
+      "name": "紧急报警",
+      "icon": "DesktopOutlined"
+    },
+    {
+      "key": "doorguard/cardRecord",
+      "name": "充电桩",
+      "icon": "DesktopOutlined"
+    },{
+      "key": "doorguard/cardRecord",
+      "name": "公共WIFI",
+      "icon": "DesktopOutlined"
+    },{
+      "key": "doorguard/cardRecord",
+      "name": "运维中心",
+      "icon": "DesktopOutlined"
+    }
+  ]
+}

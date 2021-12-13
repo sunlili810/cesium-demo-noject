@@ -1,0 +1,170 @@
+.sgw {
+  .nav-right {
+    margin-top: 0px;
+  }
+  .ant-table{
+    background: rgba(4,14,41,0.2);
+    .ant-table-container{
+      border:0;
+    }
+    .ant-table-thead > tr > th{
+      background: transparent;
+      color:#fff;
+    }
+    .ant-table-container > .ant-table-content > table > thead > tr > th{
+      border: 1px solid #019EFF;
+      border-right:0;
+    }
+    .ant-table-container > .ant-table-content > table > thead > tr > th:last-child{
+      border-right: 1px solid #019EFF;
+    }
+    .ant-table-container > .ant-table-content > table > tbody > tr > td{
+      border-right:none;
+      border-bottom: 0;
+      border-left:0;
+    }
+   .ant-table-container > .ant-table-content > table > thead > tr > .ant-table-cell-fix-right-first::after{
+    border-right:0;
+  }
+    .ant-table-placeholder:hover{
+      background: transparent;
+    }
+    .ant-table-tbody .ant-empty .ant-empty-normal:hover{
+      background: transparent;
+    }
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+    color:#fff;
+    border: 1px solid #47B7FF;
+    background: rgba(7, 40, 91, 0.8);
+    box-shadow: inset 0px 0px 5px #47B7FF;
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
+    color:#fff;
+    border: 1px solid #47B7FF;
+    background: rgba(7, 40, 91, 0.8);
+    box-shadow: inset 0px 0px 5px #47B7FF;
+  }
+  .ant-pagination-item-active{
+    background-color: #00FCFF;
+    color: #19283B !important;
+  }
+  .ant-empty-description{
+    color:#fff;
+  }
+  .ant-pagination-options-quick-jumper{
+    color:#fff;
+  }
+  .ant-table-tbody{
+    td{
+      color:#fff;
+      border-bottom: 1px solid #10274F!important;
+      font-family: "Microsoft YaHei";
+      padding-top: 18px;
+      padding-bottom:18px;
+    }
+  }
+  .ant-table-tbody tr:hover td{
+    background: transparent!important;
+  }
+  .ant-table-tbody td:hover{
+    background: transparent;
+  }
+  .unconfirmOp,.confirmOp{
+    display: inline-block;
+    padding:2px 15px;
+    border-radius: 10px;
+    font-family: "Microsoft YaHei";
+  }
+  .unconfirmOp{
+    background:#07405A;
+    color:#fff;
+  }
+  .confirmOp{
+    background:#00C3C4;
+    color:#19283B;
+  }
+}
+.swConfig{
+  .inptgroup{
+    input{
+      display: inline-block;
+      width: 45px;
+      margin-left: 5px;
+      border-radius: 4px;
+       border:1px solid #d9d9d9
+    }
+  }
+  .ant-picker{
+    width:100%;
+  }
+}
+.inptgroup input::after{
+  content:"为.";
+  background-color: red;
+  color:red;
+}
+
+//全局样式
+.ant-form-item{
+  margin-bottom: 10px;
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding: 13px 16px;
+}
+/*滚动条样式*/
+.ant-table-body::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+.ant-table-body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+  background: rgba(87,77,119,0.5);
+}
+.ant-table-body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  //-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  //border-radius: 0;
+  background: none!important;//rgba(0,0,0,0.1);
+}
+.ant-table-fixed-right{
+  .ant-table-row-level-0:nth-child(even){
+    // background: #040F30;
+  }
+}
+.ant-table-fixed-header{
+  .ant-table-body-inner::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 10px;
+  }
+  .ant-table-body-inner::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    //-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    //border-radius: 0;
+    background: none!important;//rgba(0,0,0,0.1);
+  }
+}
+
+.swConfig {
+  .ant-form-item-label{
+    display: inline-block;
+  }
+  .ant-form-item-control{
+    display: inline-block;
+    line-height: 32px;
+  }
+  .ant-form-item-children {
+    width: 100%;
+    .react-ip-input {
+      width: 100%;
+      padding: 0;
+      input {
+        width: 47px;
+        height:32px;
+        line-height: 32px;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+  }
+}
