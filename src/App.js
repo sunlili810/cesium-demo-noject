@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import {
+  BrowserRouter, Route, Navigate, Routes
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+ import Cesiumdemo from 'pages/cesiumDemo/index';
+import zhCN from 'antd/es/locale-provider/zh_CN';
+import { ConfigProvider } from 'antd';
+
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <ConfigProvider locale={zhCN}>
+          <BrowserRouter>
+            <Routes>
+
+              <Route exact path="/" element={<Cesiumdemo />} />
+              <Route exact path={window.routername} element={<Cesiumdemo />} />
+              <Route exact path="hangzhoulight/cesium" element={<Cesiumdemo />} />
+
+            </Routes>
+          </BrowserRouter>
+        </ConfigProvider>
+      </div>
+    );
+  }
 }
 
 export default App;
+// Navigate <Route path='/' render={() => <Redirect to={window.routername} />} />

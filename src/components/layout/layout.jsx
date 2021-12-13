@@ -392,4 +392,5 @@ PageComponent.propTypes = {
   name: PropTypes.string.isRequired,
   history: PropTypes.object.isRequired
 };
-export default withRouter(PageComponent);
+// export default withRouter(PageComponent);
+ export default PageComponent;

@@ -1,5 +1,5 @@
 import { observable } from 'mobx';
-import Ajax from 'util/ajax';
+import Ajax from 'myutil/ajax';
 
 export default class Logintstore {
   @observable data = {
